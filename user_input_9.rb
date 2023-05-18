@@ -1,15 +1,24 @@
-#This is another students example, and way less lines then LS
-#also doesn't have a nested loop this way
-loop do 
-  puts '>> How many lines do you want? ' \
-  'Enter a number >= 3 (Q to quit):'
+#saw another student use this method and like the flow of it way more
+loop do
+  puts '>> How many output lines do you want? Enter a number >= 3 (Q to quit):'
   ans = gets.chomp
   break if ans.downcase == "q"
-  if ans.to_i >= 3
-    ans.to_i.times { puts "LS is the best!"}
+  
+  if ans.to_i < 3
+  puts ">> That's not enough lines."
   else 
-    puts "Not enough."
+  ans.to_i.times { puts "LS is the best!" }
   end 
 end 
-puts "Got it!"
- 
+
+puts "ok"
+
+#or this way gets it done in even less (7 lines!)
+#loop do
+#  puts '>> How many output lines do you want? Enter a number >= 3 (Q to quit):'
+#  ans = gets.chomp 
+#  break if ans.downcase == 'q'
+#  ans.to_i.times { puts "LS is the best!" }  if ans.to_i >= 3
+#  puts ">> That's not enough lines." if ans.to_i < 3
+#end 
+#puts "ok"
