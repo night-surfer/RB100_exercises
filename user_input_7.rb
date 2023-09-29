@@ -13,3 +13,12 @@ loop do
 end   
 
 puts "Welcome #{USERNAME}!"
+
+=begin
+pseudo code to add in only getting three attemts:
+
+log each attempt
+
+warn that after 3 attempts you will be locked out
+
+after three attempts break loop and give puts "Blocked"

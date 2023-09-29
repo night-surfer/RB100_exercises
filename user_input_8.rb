@@ -25,4 +25,4 @@ loop do
   end 
 end 
 
-puts "#{numerator} / #{denominator} = #{numerator.to_i / denominator.to_i}"
+puts "#{numerator} / #{denominator} = #{numerator.to_f / denominator.to_f}"

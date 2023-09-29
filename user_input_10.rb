@@ -4,7 +4,7 @@ end
 
 def read_number
   loop do 
-    puts ">> Please enter a poitive or negative integer:"
+    puts ">> Please enter a positive or negative integer:"
     num = gets.chomp
     return num.to_i if valid_number?(num) 
     puts "Invalid. Only non-zero integers are allowed."
